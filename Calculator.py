@@ -1,5 +1,14 @@
 num1 = input("Enter your first number: ")
 num2 = input("Enter your second number: ")
-result = float(num1) + float(num2)
+operation = input("What type of operation would you like to do? ")
 
-print(result)
+if operation == "+":
+    result = float(num1) + float(num2)
+elif operation == "-":
+    result = float(num1) - float(num2)
+elif operation == "*":
+    result = float(num1) * float(num2)
+elif operation == "/":
+    result = float(num1) / float(num2)
+
+print(round(result), 1)
